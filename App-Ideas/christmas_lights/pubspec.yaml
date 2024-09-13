@@ -1,0 +1,47 @@
+name: christmas_lights
+description: "The ChristmasLights application relies on your development talents to create a mesmerizing light display. Your task is to draw seven colored circles in a row and based on a timer change the intensity of each circle. When a circle is brightened it's predecessor returns to its normal intensity."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^14.2.7
+  logger: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
+
+#dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/icons/launch-icon.png"
+  web:
+    generate: true
+    image_path: "assets/icons/launch-icon.png"
+  windows:
+    generate: true
+    image_path: "assets/icons/launch-icon.png"
+
+#dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/icons/splash-icon.png"
+  android: true
+  web: true
+  android_12:
+    color: "#ffffff"
+    image: "assets/icons/splash-icon.png"

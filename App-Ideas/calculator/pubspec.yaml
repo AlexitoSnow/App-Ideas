@@ -1,0 +1,47 @@
+name: calculator
+description: "Calculators are not only one of the most useful tools available, but they are also a great way to understand UI and event processing in an application. In this problem you will create a calculator that supports basic arithmetic calculations on integers."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^14.2.7
+  logger: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
+
+#dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/icons/launch-icon.png"
+  web:
+    generate: true
+    image_path: "assets/icons/launch-icon.png"
+  windows:
+    generate: true
+    image_path: "assets/icons/launch-icon.png"
+
+#dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/icons/splash-icon.png"
+  android: true
+  web: true
+  android_12:
+    color: "#ffffff"
+    image: "assets/icons/splash-icon.png"
